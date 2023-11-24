@@ -2,6 +2,7 @@ import Login from './Pages/Login/Login';
 import Signup from './Pages/signup/Signup';
 import Sidebar from './component/sidebar/Sidebar';
 import Dashboard from './component/dashboard/Dashboard';
+import Navbar from './component/navbar/Navbar'
 import {Routes, Route} from 'react-router-dom';
 
 
@@ -11,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Login/>}/>
         <Route path="/signup" element={<Signup/>}/>
-        <Route path="/dashboard" element={<><Sidebar/><Dashboard/></>}/>
+        <Route path="/dashboard" element={<><Navbar/><Sidebar/><Dashboard/></>}/>
       </Routes>
     </div>
   );
