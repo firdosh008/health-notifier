@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-
+import login from "../../assets/images/login.png";
 
 function SignUp() {
   const [username, setUsername] = useState("");
@@ -117,7 +117,7 @@ function SignUp() {
         </div>
         <div className="relative">
           <img
-            src="image.jpg"
+            src={login}
             alt="img"
             className="w-[400px] h-full hidden rounded-r-2xl md:block object-cover"
           />

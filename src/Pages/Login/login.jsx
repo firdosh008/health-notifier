@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./login.css";
+import login from "../../assets/images/login.png";
 
 function Login() {
   const [username, setUsername] = useState("");
@@ -26,7 +27,6 @@ function Login() {
         password,
       });
       const token = response.data.token;
-      alert("Login successful");
       setUsername("");
       setPassword("");
       fetchUsers();
@@ -43,7 +43,7 @@ function Login() {
       <div className="relative flex flex-col m-6 space-y-8 bg-white shadow-2xl hover:shadow-xl shadow-neutral-700 hover:shadow-neutral-900 rounded-2xl md:flex-row md:space-y-0">
         <div className="relative">
           <img
-            src="sign in.jpg"
+            src={login}
             alt="img"
             className="w-[400px] h-full hidden rounded-r-2xl md:block object-cover"
           />
