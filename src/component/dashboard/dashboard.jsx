@@ -89,11 +89,11 @@ const dashboard = () => {
 
             <div className="col-span-1 row-span-2 shadow-lg rounded-xl shadow-neutral-600 bg-neutral-100 flex flex-col justify-between p-4">
                 <div className="flex flex-row">
-                    <div>
-                        <h1>Stretching</h1>
+                    <div className="flex flex-col justify-betwen gap-4">
+                        <h1>Yoga</h1>
                         <div>
-                            <p></p>
-                            <p></p>
+                            <p>16 poses</p>
+                            <p>65 minutes</p>
                         </div>
                     </div>
 
