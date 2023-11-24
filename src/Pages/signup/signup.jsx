@@ -1,8 +1,16 @@
-const signup = () => {
+import React from 'react'
+import { useState,useEffect } from 'react'
+
+
+
+function SignUp() {
+
+  const [username, setUsername] = useState('');
+  
+
   return (
     <div class="flex items-center justify-center min-h-screen bg-neutral-100">
       <div class="relative flex flex-col m-6 space-y-8 bg-white shadow-2xl hover:shadow-xl shadow-neutral-700 hover:shadow-neutral-900 rounded-2xl md:flex-row md:space-y-0">
-        {/* <!-- left side --> */}
         <div class="flex flex-col justify-center p-8 md:p-14">
           <div class="mb-3 text-2xl font-bol flex flex-row gap-2 text-neutral-500 font-semibold mx-auto">
             Sign Up to
@@ -62,14 +70,12 @@ const signup = () => {
             <span class="font-semibold text-green-500"> Sign In</span>
           </div>
         </div>
-        {/* <!-- right side --> */}
         <div class="relative">
           <img
             src="image.jpg"
             alt="img"
             class="w-[400px] h-full hidden rounded-r-2xl md:block object-cover"
           />
-          {/* <!-- text on image  --> */}
           <div class="absolute hidden bottom-10 right-6 p-6 bg-white bg-opacity-30 backdrop-blur-sm rounded drop-shadow-lg md:block">
             <span class="text-white text-xl">
               We've been uesing Untitle to kick"
@@ -81,7 +87,7 @@ const signup = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default signup;
+export default SignUp;
