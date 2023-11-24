@@ -1,5 +1,7 @@
 import React from "react";
-import logo from "../../assets/images/logo.jpg";
+// import logo from "../../assets/images/logo.jpg";
+
+import Form from "../form/Form";
 
 import { IoIosNotifications } from "react-icons/io";
 import { FaFilter } from "react-icons/fa";
@@ -99,7 +101,7 @@ function navbar() {
 
 
         <div className="col-span-2">
-
+          <Form/>
         </div>
 
 
