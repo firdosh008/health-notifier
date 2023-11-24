@@ -15,7 +15,7 @@ import { IoMdSettings,
 
 const Sidebar = () => {
   return (
-    <div className="w-1/6 flex flex-col justify-between h-[1000px] px-2 bg-neutral-900 text-white gap-6">
+    <div className="w-1/6 flex flex-col justify-between min-h-screen px-2 bg-neutral-900 text-white gap-6">
       {/* upper part */}
       <div className="flex flex-col gap-6">
         <div className="flex flex-col items-center">
