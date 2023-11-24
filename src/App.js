@@ -4,6 +4,7 @@ import Sidebar from './component/sidebar/Sidebar';
 import Dashboard from './component/dashboard/Dashboard';
 import Navbar from './component/navbar/Navbar'
 import {Routes, Route} from 'react-router-dom';
+import Form from './component/form/Form';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Login/>}/>
         <Route path="/signup" element={<Signup/>}/>
         <Route path="/dashboard" element={<><Navbar/><Sidebar/><Dashboard/></>}/>
+        <Route path="/form" element={<Form/>}/>
       </Routes>
     </div>
   );
