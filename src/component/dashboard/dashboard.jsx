@@ -37,7 +37,7 @@ const dashboard = () => {
                 </div>
             </div>
 
-            <div className="col-span-2 row-span-2 shadow-lg rounded-xl shadow-neutral-600 bg-neutral-100 p-4">
+            <div className="col-span-2 row-span-2 shadow-lg rounded-xl shadow-neutral-600 bg-neutral-100 flex flex-col gap-4 p-4">
                 <p className="text-xl font-semibold text-neutral-800">Calories</p>
                 <div className="flex flex-row justify-between gap-2">
                     <div>
@@ -47,61 +47,71 @@ const dashboard = () => {
                     <div className="flex flex-col justify-between gap-6 text-xl">
                         <div className="flex flex-row justify-between gap-2">
                             <div className="flex flex-row items-center text-orange-500">
-                                <GoDotFill/>
+                                <GoDotFill />
                                 Protein
                             </div>
-                            <div>
-                                43%
-                            </div>
+                            <p>43%</p>
                         </div>
                         <div className="flex flex-row justify between gap-2">
                             <div className="flex flex-row items-center text-green-500">
-                                <GoDotFill/>
+                                <GoDotFill />
                                 Carbs
                             </div>
-                            <div>
-                                43%
-                            </div>
+                            <p>43%</p>
                         </div>
                         <div className="flex flex-row justify between gap-2">
                             <div className="flex flex-row items-center text-neutral-500">
-                                <GoDotFill/>
+                                <GoDotFill />
                                 Fats
                             </div>
-                            <div>
-                                43%
-                            </div>
+                            <p>43%</p>
                         </div>
-                        
+
                     </div>
                 </div>
-                <div className="flex flex-row justify-between items-center text-green-500">
+                <div className="flex flex-row justify-between items-center text-green-600">
                     <p>Go to health for more</p>
-                    <IoIosArrowForward/>
+                    <IoIosArrowForward />
                 </div>
             </div>
 
-            <div className="col-span-1 row-span-3 shadow-lg rounded-xl shadow-neutral-600 bg-neutral-100">
+            <div className="col-span-1 row-span-2 shadow-lg rounded-xl shadow-neutral-600 bg-neutral-100">
 
             </div>
 
-            <div className="col-span-3 row-span-3 shadow-lg rounded-xl shadow-neutral-600 bg-neutral-100">
+            <div className="col-span-3 row-span-2 shadow-lg rounded-xl shadow-neutral-600 bg-neutral-100">
 
             </div>
 
-            <div className="col-span-2 row-span-3 shadow-lg rounded-xl shadow-neutral-600 bg-neutral-100">
+            <div className="col-span-2 row-span-2 shadow-lg rounded-xl shadow-neutral-600 bg-neutral-100">
 
             </div>
 
-            <div className="col-span-1 row-span-1 shadow-lg rounded-xl shadow-neutral-600 bg-neutral-100">
+            <div className="col-span-1 row-span-2 shadow-lg rounded-xl shadow-neutral-600 bg-neutral-100 flex flex-col justify-between p-4">
+                <div className="flex flex-row">
+                    <div>
+                        <h1>Stretching</h1>
+                        <div>
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    {/* ----image---- */}
+                    <div></div>
+                </div>
+
+                <div className="flex flex-row justify-between items-center text-green-600">
+                    <p>Let's go</p>
+                    <IoIosArrowForward />
+                </div>
+            </div>
+
+            <div className="col-span-2 row-span-2 shadow-lg rounded-xl shadow-neutral-600 bg-neutral-100">
 
             </div>
 
-            <div className="col-span-2 row-span-1 shadow-lg rounded-xl shadow-neutral-600 bg-neutral-100">
-
-            </div>
-
-            <div className="col-span-3 row-span-1 shadow-lg rounded-xl shadow-neutral-600 bg-neutral-100">
+            <div className="col-span-3 row-span-2 shadow-lg rounded-xl shadow-neutral-600 bg-neutral-100">
 
             </div>
         </div>
